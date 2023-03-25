@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&family=Roboto&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* background-color: var(--bg-clr); */
+}
+.body {
+  background-color: var(--bg-clr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  font-size: 100%;
+  height: 100%;
+}
+.btn {
+  border-radius: 10px;
+}
+.box {
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  background: url("https://images.pexels.com/photos/912364/pexels-photo-912364.jpeg?auto=compress&cs=tinysrgb&w=600")
+    no-repeat center;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+
+  /* align-items: center; */
+}
+
+.heading {
+  margin-top: -74px;
+  margin-left: 72px;
+  color: var(--btn-text-clr);
+}
+.inputfield {
+  margin-left: 77px;
+  border-radius: 18px;
+  padding: 12px;
+  cursor: pointer;
+  background-color: var(--btn-bg-clr);
+  color: var(--btn-text-clr);
+}
+.location {
+  margin-left: 72px;
+  margin-top: 17px;
+  height: 8vh;
+  color: var(--btn-text-clr);
+}
+.maxTemp {
+  margin-bottom: 49px;
+  margin-top: 8px;
+  color: var(--btn-text-clr);
+}
+.temp {
+  color: var(--btn-text-clr);
+}
+
+p {
+  margin-top: 36px;
+  margin-left: 93px;
+  font-weight: 800;
+  color: var(--btn-text-clr);
+}
+.btn {
+  padding: 7px;
+  margin-left: 10px;
+  margin-top: 10px;
+  background-color: var(--btn-bg-clr);
+  color: var(--btn-text-clr);
+}
+.dark-theme {
+  --main-heading: white;
+  --para-clr: white;
+  --btn-bg-clr: white;
+  --btn-text-clr: black;
+  --bg-clr: white;
+}
+.light-theme {
+  --main-heading: black;
+  --para-clr: black;
+  --btn-bg-clr: black;
+  --btn-text-clr: white;
+  --bg-clr: black;
+}
+.main {
+  background-color: var(--bg-clr);
+}
+.main ::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .btn {
+    padding: 2px;
+    margin-left: 6px;
+    margin-right: 0px;
+  }
+
+  .heading {
+    margin-top: -18px;
+    font-size: 27px;
+  }
+  .inputfield {
+    padding: 6px;
+    border-radius: 14px;
+    margin-left: 70px;
+    font-size: 14px;
+    margin-top: 17px;
+  }
+  .location{
+    margin-left: 102px;
+    font-size: 21px;
+    margin-top: 10px;
+  }
+  .temp{
+    font-size: 20px;
+    margin-top: -22px;
+    padding: 22px;
+  }
+
+
+}
